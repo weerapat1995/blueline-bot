@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.TOKEN
+const token = process.env.TOKEN;
+
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+
 client.on('guildMemberAdd', member => {
     // Send the message to a designated channel on a server:
     const channel = member.guild.channels.find(ch => ch.name === 'member-log');
