@@ -57,4 +57,4 @@ Client.on('ready', () => {
     Client.user.setActivity("ARRANT GUILD", { type: "PLAYING"})
 });
 
-client.login(token).catch(err => console.log(err));
+Client.login(token).catch(err => console.log(err));
